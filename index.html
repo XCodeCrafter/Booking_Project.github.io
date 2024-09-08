@@ -1,355 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
 
-<!--=============== FONT google KIT ===============-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!-- font awesome cdn link -->
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="mediaqueries.css" />
 
-
-<!--=============== REMIXICONS ===============-->
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-<!-- font awesome cdn link -->
-<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-
-    <!-- swiper css link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking project</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./lightbox.min.css">
+    <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+  </head>
+  <body>
+      
     
-<!--==================== HEADER ====================-->
 
-<!--<div class="loading-screen">
-    <div class="loading-box">
-      <p>Loading, please wait...</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="navbar" role="navigation">
+      <div class="max-width">
+          <div class="logo"><a href="#">Portfolio</a></div>
+          
+          <div id="menuToggle">
+              <input type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul class="menu" id="menu">
+                  <li class="active menu-btn"> <a href="#about" style="--i: 0.05s">About</a></li>
+                  <li class="menu-btn"> <a href="#experience" style="--i: 0.1s">Experience</a></li>
+                  <li class="menu-btn"> <a href="#My_CV" style="--i: 0.15s">Resume</a></li>
+                  <li class="menu-btn"> <a href="#projects" style="--i: 0.2s">Projects</a></li>
+                  <li class="menu-btn"> <a href="#gallery" style="--i: 0.25s">Gallery</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+
+
+
+
+
+
+
+
+
+
+    <div class="parallax">
+      <img src="./assets/nebula.png" id="first">
+      <img src="./assets/moon_yellow.png" id="hawk" style="width: 10%; height: 10%;">
+      <img class="last_img" src="./assets/forest-4954825_1280.png" id="last">
+      <h1 id="text">Life as an adventure</h1>
+    
+      
     </div>
-  </div>-->
+    
+
+
+      <div class="about_box">
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Libor     Zmelik</h1>
+            <p class="section__text__p2" id="job-title">CNC PROGRAMMER</p>
+
+
+                 <h2 class="section__title">
+                    Kontakt</h2>
+
+              <div class="contact_form">
+                    <a href="../cnc-web/form.html"><i class="fas fa-phone"></i>+420 728 123 456</a>
+                    <a href="../cnc-web/form.html"><i class="fas fa-envelope"></i>Bobb.Henkel@gmail.com</a>
+                    <a href="https://www.instagram.com/miakhalifa/"><i class="fab fa-instagram"></i> instagram</a>
+                    <a href='#'> <i class="fab fa-linkedin"></i> linkedIn</a>
+                 </div>
 
 
 
 
-  <section class="header" id="header">
-    <a href="index.html" class="logo">zelená vila</a>
-    <nav class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-            <li class="nav__item">
+
+
+            <div class="btn-container">
+                <button class="btn_main btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn_main btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+          
+        </div>
+    </div>
+</section>
+
+    <section id="about">
+      <div class="section__text__p1">
+        <div class="title_2">
+            <p>about</p>
+            <h1>me</h1>
+        </div>
+    </div>
+
+
+    <div class="container">
+      <div class="box">
+          <p class="text">
+              I'm a curious traveler, lifelong learner, and 
+              music lover with a passion for making meaningful connections. 
+              Whether I'm exploring new cities, diving into a good  <span class="highlight">boo</span>k, or jamming to my latest 
+              playlist, I'm always on the lookout for the next adventure—<span class="highlight">b</span>oth in l<span class="highlight">i</span>f<span class="highlight">e</span> and in work.
+          </p>
+
+          <p class="text">
+              When I'm not traveling the world (or dreaming about it), you'll probably find me diving 
+              deep into new <span class="highlight">s</span>kills or discovering fresh perspectives by meeting awesome peop<span class="highlight">l</span>e. 
+              I believe that learning sh<span class="highlight">o</span>uld ne<span class="highlight">ver</span> stop, and neither should having 
+              fun while doing it!
+          </p>
+      </div>
+  </div>
+
+
 
                 
-                <div class="wrapper">
-                    <label class="switch">
-                        <input type="checkbox" id="checkbox-toggle_EN" />
-                        <span class="slider">
-                            <div class="fish">
-                                <div class="body"></div>
-                                <div class="eye"></div>
-                                <div class="tail"></div>
-                            </div>
-                        </span>
-                        <span class="wave"> </span>
-                        <div class="boat">
-                            <div class="bottom"></div>
-                            <div class="mast"></div>
-                            <div class="rectangle-sm"></div>
-                            <div class="rectangle-lg"></div>
-                        </div>
-                        <div class="sky">
-                            <div class="sun">
-                                <div class="outer"></div>
-                                <div class="inner"></div>
-                            </div>
-                            <div class="cloud cloud1">
-                                <div class="rect"></div>
-                                <div class="circle circle-lg"></div>
-                                <div class="circle circle-sm"></div>
-                            </div>
-                            <div class="cloud cloud2">
-                                <div class="rect"></div>
-                                <div class="circle circle-lg"></div>
-                                <div class="circle circle-sm"></div>
-                            </div>
-                        </div>
-                    </label>
-                    <p class="text-under-toggle">English</p>
+     
+    </section>
 
+
+
+
+
+
+
+
+
+    <section id="experience">
+
+      <div class="section__text__p1">
+        <div class="title_2">
+            <p>my</p>
+            <h1>experience</h1>
+        </div>
+
+
+
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container details-container-left border-animation">
+            <h2 class="experience-sub-title sub-title">IT - Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <div class= "border-animation__inner">
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
-            </li>
+              </article>
+              <article>
+                <div class= "border-animation__inner">
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+              
+                <div class= "border-animation__inner">
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
 
+               
+                <div class= "border-animation__inner">
+                  <h3>Material AI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container details-container-right border-animation">
+            <h2 class="experience-sub-title sub-title">CNC Programming</h2>
+            <div class="article-container">
+              <article>
+             
+                <div class= "border-animation__inner">
+                  <h3>Heidenhain</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+             
+                <div class= "border-animation__inner">
+                  <h3>Sinumeric-840D</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div class= "border-animation__inner">
+                  <h3>CAD/CAM Fusion 360</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class= "border-animation__inner">
+                  <h3>Fanuc</h3>
+                  <p>Just started</p>
+                </div>
+              </article>
             
-            <li class="nav__item">
-                <div id="btn" class="fas fa-crow"></div>
-                <a href="index.html" class="nav__link1 active-link">úvod</a>
-            </li>
-            <li class="nav__item">
-                <a href="about.html" class="nav__link1">o nás</a>
-            </li>
-            <li class="nav__item">
-                <a href="package.html" class="nav__link1">doporučujeme</a>
-            </li>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
 
 
 
-            <li class="nav__item">
-                <a href="#" class="nav__link1">galerie<i class="fas fa-caret-down"></i></a>
-                <div class="dropdown__menu">
-                    <ul>
-                        <li><a href="parallax.html">léto</a></li>
-                        <li><a href="parallax2.html">zima</a></li>
-                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="My_CV">
+      <div class="section__text__p1">
+        <div class="title_2">
+            <p>My</p>
+            <h1>RESUME</h1>
+        </div>
+    </div>
+ 
+
+
+        <div id="timeline-1" class="timeline-container">
+            <div class="timeline-header">
+                <h2 class="timeline-header__title">Fueled by Curiosity and Purpose</h2>
+                <h3 class="timeline-header__subtitle">Building My Story</h3>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-text="STEMLINGER KVF-DE">
+                  
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc6.jpg" alt="Mustafa Kemal Atatürk 1881">
+                        <h2 class="timeline__content-title">04.2023-NOW</h2>
+                        <p class="timeline__content-desc">
+                          At our company, I handle <span class="highlight">programming</span> for various machinery, using systems <span class="highlight">Sinumeric D840</span>, 
+                          <span class="highlight">Heidenhain</span>, 
+                          and <span class="highlight">Fusion 360</span>. I'm in charge of setting up tools, designing fixtures for products, 
+                          testing and fine-tuning programs until I get the final part just right. I measure everything and 
+                          we send the first part for approval to our customer. Products are for the automotive industry, 
+                          high-quality standards and demanding tolerances.
+                          I am <span class="highlight">programming with R and Q parameters on Sinumeric and Heidenhain.</span>
+                           Same level of skill 
+                          on both systems. Programming for <span class="highlight">5 axis machines.</span>
+                          
+                          Parts till 40kg, from steel, cast steel, and aluminium parts till 2kg.
+                        </p>
+                    </div>
                 </div>
-            </li>
-
-
-
-
-            <li class="nav__item">
-                <a href="index.html#Price" class="nav__link1">cena</a>
-            </li>
-            <li class="nav__item">
-                <a href="form.html" class="nav__link1">kontakt</a>
-            </li>
-        </ul>
-    </nav>
-    <div id="menu-btn" class="fas fa-bars"></div>
-</section>
-
-<!--==================== HEADER END ====================-->
-
-
-
-
-
-
-    <!-- home section starts -->
-<section class="home">
-
-    <div class="swiper home-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
-                <div class="content">
-                    <span>poznávej, objevovuj, cestuj</span>
-                    <h3>prozkoumej jižní Moravu</h3>
-                    <a href="package.html" class="btn">zjistit více</a>
+                <div class="timeline-item" data-text="Bierens, Tilburg-NL">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/technical-2.jpg" alt="Mustafa Kemal Atatürk 1893">
+                        <h2 class="timeline__content-title">07.2016-05.2024</h2>
+                        <p class="timeline__content-desc">
+                          <span class="highlight">Programming by Heidenhain 480 and I530 on 5 axis milling machine.</span> 
+                          By drawing determination of cutting tools, Production control and measurement of the product 
+                          according to the drawing. Production of large pieces. (max 10 tons)</p>
+                    </div>
                 </div>
+                <div class="timeline-item" data-text="Maveric, Rotterdam-NL">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc7.jpg" alt="Mustafa Kemal Atatürk 1905">
+                        <h2 class="timeline__content-title">09.2013-03.2016</h2>
+                        <p class="timeline__content-desc">
+                          <span class="highlight">Piece production on 6axis CNC machine with Okuma (G codes) and Siemens 840D system.</span> 
+                          According to the drowing <span class="highlight">creating programs on the machine.</span> Correction, preparing the tools, 
+                          making setting, dettermination of cutting conditions and measuring. Machining pieces for oil industries. 
+                          Worked with materials: Stainles steel, Duplex, Hastelloy, Inconel.                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="PTD, Slavkov u Brna-CZ">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/milling-4.jpg" alt="Mustafa Kemal Atatürk 1908">
+                        <h2 class="timeline__content-title">10.2008-06.2012</h2>
+                        <p class="timeline__content-desc">
+
+                          <span class="highlight">Setting and checking</span> 
+                          compliance with <span class="highlight">technologic processes</span> throughout
+                          manufacturing. <span class="highlight">Preparing documents</span> for processing orders. <span class="highlight">Ordering necessary
+                          materials and tools for production.</span> Performing checks on raw materials before fabrication.
+                          Supervision during production and operation of machinery and equipment.
+                          <span class="highlight">Oversee the compliance with OHS.</span>
+                          Field of work: Manufacturing and industry
+                          Profession: Production planner, Setter / CNC machines programmer
+                          Country: Czech Republic  </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="timeline-item" data-text="EKOL Energo, Brno-CZ">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc12.jpg" alt="Mustafa Kemal Atatürk 1916">
+                        <h2 class="timeline__content-title">09.2007-09.2008</h2>
+                        <p class="timeline__content-desc">
+                          Self piece production. Work on HAAS CNC system and HEIDENHAIN. By drawing
+                          determinations of cutting tools, clamping workpieces for longer operations,
+                          correction of instruments, program checkups (cutting conditions, Raids ...)
+                          loading the program from the computer (surfcam) to CNC. Production control
+                          and measurments of the product according to the drawing.
+                          Field of work: Mechanical engineering
+                          Profession: Setter / CNC machines programmer
+                          Country: Czech Republic                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <!--
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc7.jpg" alt="Mustafa Kemal Atatürk 1919">
+                        <h2 class="timeline__content-title">1919</h2>
+                        <p class="timeline__content-desc">
+                            On May 19, 1919, Mustafa Kemal Pasha landed in the Black Sea port of Samsun to start the War of Independence. In defiance of the Sultan's government, he rallied a liberation army in Anatolia and convened the Congress of Erzurum and Sivas which established the basis for the new national effort under his leadership.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc8.jpg" alt="Mustafa Kemal Atatürk 1920">
+                        <h2 class="timeline__content-title">1920</h2>
+                        <p class="timeline__content-desc">
+                            On April 23, 1920, the Grand National Assembly was inaugurated. Mustafa Kemal Pasha was elected to its Presidency. Fighting on many fronts, he led his forces to victory against rebels and invading armies. Following the Turkish triumph at the two major battles at Inonu in Western Turkey, the Grand National Assembly conferred on Mustafa Kemal Pasha the title of Commander-in-Chief with the rank of Marshal.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc9.jpg" alt="Mustafa Kemal Atatürk 1922">
+                        <h2 class="timeline__content-title">1922</h2>
+                        <p class="timeline__content-desc">
+                            At the end of August 1922, the Turkish armies won their ultimate victory. Within a few weeks, the Turkish mainland was completely liberated, the armistice signed, and the rule of the Ottoman dynasty abolished.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc10.jpeg" alt="Mustafa Kemal Atatürk 1923">
+                        <h2 class="timeline__content-title">1923</h2>
+                        <p class="timeline__content-desc">
+                            In July 1923, the national government signed the Lausanne Treaty with Great Britain, France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa Kemal Pasha was unanimously elected President of the Republic.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc11.jpg" alt="Mustafa Kemal Atatürk 1934">
+                        <h2 class="timeline__content-title">1934</h2>
+                        <p class="timeline__content-desc">
+                            The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization. With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women, changed the alphabet and the attire, and advanced the arts and the sciences, agriculture and industry. In 1934, when the surname law was adopted, the national parliament gave him the name <strong>Atatürk</strong> (Father of the Turks).
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="./assets/cnc12.jpg" alt="Mustafa Kemal Atatürk 1938">
+                        <h2 class="timeline__content-title">1938</h2>
+                        <p class="timeline__content-desc">
+                            On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.
+                        </p>
+                    </div>
+                </div>
+              -->
+
+            </div>
+        </div>
+
+    
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="projects">
+          <div class="section__text__p1">
+          <div class="title_2">
+              <p>Browse</p>
+              <h1>my recent <span class="highlight">project</span> in - <span class="highlight">IT</span></h1>
+          </div>
+
+
+
+
+          <main class="page-content">
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Machine shop</h2>
+                <p class="copy">My very first project</p>
+                <button class="btn">View page</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Booking page</h2>
+                <p class="copy">My second project</p>
+                <button class="btn">View page</button>
+              </div>
             </div>
 
-            <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
-                <div class="content">
-                    <span>poznávej, objevovuj, cestuj</span>
-                    <h3>objevovuj nová místa</h3>
-                    <a href="package.html" class="btn">zjistit více</a>
-                </div>
+<!-- footer section start 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Still in process</h2>
+                <p class="copy">There is nothing to see yet</p>
+                <button class="btn">Do not click</button>
+              </div>
             </div>
-
-            <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat; background-position: bottom !important">
-                <div class="content">
-                    <span>poznávej, objevovuj, cestuj</span>
-                    <h3>aby váš příběh stál za to</h3>
-                    <a href="package.html" class="btn">zjistit více</a>
-                </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Still in process</h2>
+                <p class="copy">There is nothing to see yet</p>
+                <button class="btn">Do not click</button>
+              </div>
             </div>
+-->
+          </main>
 
+        </section>
 
-        </div>
 
-        <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
 
-    </div>
 
 
-</section>
 
-    <!-- home section ends -->
 
 
 
 
-<!-- home about section starts -->
-<section class="home-about">
 
-    <div class="image">
-        <img src="images/about-img.jpg" alt="">
-    </div>
 
-    <div class="content">
-        <h3>o nás</h3>
-        <p>Objevte naše klidné útočiště, které se nachází v blízkosti klidného lesa v tiché vesnici. 
-            Zde si můžete odpočinout v naší příjemné sauně, vířivce a útulném krbu, 
-            vše navrženo pro vaši dokonalou relaxaci a pohodlí.</p>
 
-        <a href="about.html" class="btn">číst více</a>
-    </div>
 
-</section>
 
 
-    <!-- service section starts -->
 
-<section class="service">
-    <h1 class="heading-title"> naše služby </h1>
 
-    <div class="box_ul">
-    <div class="box-container">
-        <div class="box">
-            <img src="images/icon-1.png">
-            <h3>Popis</h3>
-    </div>
 
-        <ul class="home_ul">
-            <li class="home_li">Check-in 15:00-17:00 &ensp;-&ensp; Check-out 10:00-11:00</li>
-            <li class="home_li">Parkovací místo pro 3 auta u domu - zdarma</li>
-            <li class="home_li">vytápění plynem a krbem, <br> který přivádí teplo do celého domu.</li>
-            <li class="home_li">malá zvířata jsou vítána</li>
-            <li class="home_li">objekt je bezbariérový</li>
-            <li class="home_li">Wifi-v objektu</li>
-         </ul>
 
-        </div>
 
-        <div class="box-container">
-        <div class="box">
-            <img src="images/icon-2.png">
-            <h3>...</h3>
-        </div>
 
-        <ul class="home_ul">
-            <li class="home_li">3 ložnice, 1 koupelna, 1 WC, 1 kuchyň, 1 obývací pokoj </li>
-            <li class="home_li">V domě máme místo pro 6-10 osob</li>
-            <li class="home_li">Velká zahrada, kde můžete také kempovat</li>
-            <li class="home_li">Sauna a vířivka v ceně</li>
-            <li class="home_li">krb pro vaše pohodlí</li>
-            <li class="home_li">Plně vybavená kuchyně</li>
-            <li class="home_li">stolní hry v češtině a angličtině <br> když není dobré počasí</li>
-         </ul>
 
-        </div>
-    </div>
-</section>
 
-<section class="service">
 
-    <div class="box_ul">
-    <div class="box-container">
-        <div class="box">
-            <img src="images/icon-3.png">
-            <h3>V objektu</h3>
-    </div>
 
-        <ul class="home_ul">
-            <li class="home_li"> internet wifi, TV, žehlička, rádio, CD přehrávač,<br> DVD přehrávač, lednička, pohovka</li>
-            <li class="home_li"> společenské hry, dětská postýlka,<br> terasa, moskytiéra, krb/kamna, </li>
-            <li class="home_li"> Vířivka, sauna, krb, <br>objekt má bezbariérový přístup, vlastní vchod</li>
-            <li class="home_li"> elektrická trouba, sklokeramická varná deska, <br>mikrovlnná trouba, varná konvice, lednice, kávovar </li>
-            <li class="home_li"> pračka, myčka nádobí, jídelní posezení</li>
-            <li class="home_li"> jedna sprcha s toaletou</li>
-         </ul>
 
-        </div>
 
+        <section id="gallery">
+          <div class="section__text2__p1">
+          <div class="title_2">
+              <p>Photo</p>
+              <h1>galery</h1>
+          </div>
 
-        
-        <div class="box-container">
-        <div class="box">
-            <img src="images/icon-4.png">
-            <h3>v rámci domu</h3>
-        </div>
 
-        <ul class="home_ul">
-            <li class="home_li">Sauna</li>
-            <li class="home_li">Vířivka</li>
-            <li class="home_li">Grill</li>
-            <li class="home_li">Venkovní posezení</li>
-            <li class="home_li">Terasa</li>
-            <li class="home_li">Tento dům se nachází v blízkosti lesa</li>
-            <li class="home_li">klidný a relaxační pobyt</li>
-         </ul>
+          <div class="container_galery">
+            <div class="box_galery">
+                    <a href="./assets/1.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/51.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/2.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/52.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/3.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/53.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/4.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/54.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/5.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/55.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/6.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/56.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/7.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/57.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/8.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/58.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/9.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/59.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/10.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/60.jpeg"></a>
+                    </div>
+                    <div class="box_galery">
+                    <a href="./assets/11.jpeg" data-lightbox="mygallery" data-title="obrazek pole"><img src="./assets/61.jpeg"></a>
+                    </div>
+                    </div>
 
-        </div>
-    </div>
-</section>
 
 
 
-                <div  id="Price"></div>
 
-<section class="service">
 
-    <div class="box_ul">
-    <div class="box-container">
-        <div class="box">
-            <img src="images/icon-5.png">
-            <h3>Vhodné pro</h3>
-    </div>
 
-        <ul class="home_ul">
-            <li class="home_li">rodiny s dětmi</li>
-            <li class="home_li">páry</li>
-            <li class="home_li">seniory</li>
-            <li class="home_li">turisty</li>
-            <li class="home_li">skupiny</li>
-            <li class="home_li">rybáře</li>
-            <li class="home_li">pokud jste se nenašli, <br> zeptejte se o další informace</li>
 
-         </ul>
 
-        </div>
 
-        <div class="box-container">
-        <div class="box">
-            <img src="images/icon-6.png">
-            <h3>Ceny</h3>
-        </div>
 
-        <ul class="home_ul">
-            <li class="home_li">Cena za objekt / noc:&ensp; 3 500 Kč – 7 500 Kč</a></li>
-            <li class="home_li">Cena za osobu/noc:&ensp; 580 Kč – 1 250 Kč</a></li>
-            <li class="home_li">Minimální délka pobytu:&ensp; 1 nebo více nocí</a></li>
-            <li class="home_li">Minimální počet osob:&ensp;&ensp; 1</a></li>
-            <li class="home_li">Malá zvířata vítána</a></li>
-            <li class="home_li">Děti také</a></li>
-         </ul>
 
-        </div>
-    </div>
 
 
-</section>
 
- <!-- service section ends -->
 
 
 
@@ -363,52 +611,21 @@
 
 
 
-<!-- home packages section starts -->
-<section class="home-packages">
 
-    <h1 class="heading-title">naše doporučení stojí za to navštívit</h1>
 
-    <div class="box-container">
 
-        <div class="box">
-         <div class="image">
-            <img src="images/bukovanskymlyn.jpg" alt="" srcset="">
-        </div>
-        <div class="content">
-            <h3>Restaurant-pension</h3>
-            <p>Místo, kde si můžete dát typickou českou kuchyni.</p>
-            <a href="https://www.bukovansky-mlyn.cz/en/" class="btn">navštivte nyní</a>
-        </div>
-    </div>
 
-        <div class="box">
-            <div class="image">
-            <img src="images/kamenak_myslivna.jpg" alt="" srcset="">
-        </div>
-        <div class="content">
-            <h3>Restaurace v lese</h3>
-            <p>Rodinná restaurace, kterou stojí za to navštívit.</p>
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g13370609-d13948123-Reviews-Kamenacka_Myslivna-Moravany_South_Moravian_Region_Moravia.html" class="btn">navštivte nyní</a>
-        </div>
-    </div>
-        <div class="box">
-            <div class="image">
-            <img src="images/vinarna_skalak.jpg" alt="" srcset="">
-        </div>
-        <div class="content">
-            <h3>Vinný sklep</h3>
-            <p>Jedno z nejlepších míst, kde můžete ochutnat lahodné víno z jižní Moravy.</p>
-            <a href="https://sklepskalak.cz/" class="btn">navštivte nyní</a>
-    </div>
-</div>
-</div>
 
-<div class="load-more"> <a href="package.html" class="btn">načíst více</a> </div>
 
-</section>
 
 
-<!-- home packages section ends -->
+
+
+
+
+
+
+
 
 
 
@@ -416,131 +633,36 @@
 <!-- footer section start -->
 
 <section class="footer">
-
-
-
-    <div class="credit"> created by <span>Libor Zmelik web designer</span> | all right reserved!</div>
-
+    <div class="credit"> created by <span>Libor Zmelik <br> web designer</span> | all right reserved!</div>
 </section>
 
 <!-- footer section end -->
+   <!-- jQuery Library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- Timeline Plugin -->
+   <script src="https://unpkg.com/scrollreveal"></script>
 
 
 
 
-
-
-
-
-
-
-<!-- swiper js link -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-
-<!-- custom js file link -->
-<!--========== SCROLL UP ==========-->
-<a href="" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
-      </a>
-
-
-
- <!--=============== SCROLLREVEAL ===============-->
- <script src="js/scrollreveal.min.js"></script>
- <!--  <script src="js/script.js"></script>-->
-
- <script src="js/script_2.js"></script>
-
-
-
-
-
-
-
- <script>
-
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        const toggle = document.querySelector('.toggle');
-        const menu = document.querySelector('#menu-btn');
-        const navbar = document.querySelector('.header .nav__menu');
-        const loadMoreBtn = document.querySelector('.packages .load-more .btn');
-        let currentItem = 3;
-
-        if (toggle) {
-            toggle.addEventListener('click', function() {
-                setTimeout(function() {
-                    window.location.href = 'index.html';
-                }, 1900); // Adjust the delay based on your animation duration
-            });
-        }
-
-
-
-
-        if (loadMoreBtn) {
-            loadMoreBtn.addEventListener('click', function() {
-                let boxes = document.querySelectorAll('.packages .box-container .box');
-                for (let i = currentItem; i < Math.min(currentItem + 3, boxes.length); i++) {
-                    boxes[i].style.display = 'inline-block';
-                }
-                currentItem += 3;
-                if (currentItem >= boxes.length) {
-                    loadMoreBtn.style.display = 'none';
-                }
-            });
-        }
-
-        window.addEventListener('scroll', function() {
-            const scrollUpBtn = document.getElementById('scroll-up');
-            if (scrollUpBtn) {
-                this.scrollY >= 350 ? scrollUpBtn.classList.add('show-scroll')
-                                    : scrollUpBtn.classList.remove('show-scroll');
-            }
-
-            const sections = document.querySelectorAll('section[id]');
-            const scrollY = window.pageYOffset;
-
-            sections.forEach(current => {
-                const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - 58;
-                const sectionId = current.getAttribute('id');
-                const sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
-
-                if (sectionsClass) {
-                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                        sectionsClass.classList.add('active-link');
-                    } else {
-                        sectionsClass.classList.remove('active-link');
-                    }
-                }
-            });
-        });
-
-        const sr = ScrollReveal({
-            origin: 'top',
-            distance: '60px',
-            duration: 3000,
-            delay: 400,
-        });
-
-        sr.reveal('.home__data, .explore__data, .explore__user, .footer__container,');
-        sr.reveal('.home__card', {delay: 600, distance: '100px', interval: 100});
-        sr.reveal('.join__image, .container1', {origin: 'right', distance: '300px'});
-        sr.reveal('.about__image, .container', {origin: 'left', distance: '300px'});
-        sr.reveal('.popular__card', {interval: 200});
-
-        var swiper = new Swiper(".home-slider", {
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+   <script>
+    let first = document.getElementById("first");
+    let hawk = document.getElementById("hawk");
+    let last = document.getElementById("last");
+    let text = document.getElementById("text");
+  
+    window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+  
+        first.style.top = value * 0.7 + 'px';
+        hawk.style.top =  value * 0.5 + 'px';  // Updated to move down
+        last.style.bottom = value * 0.5 + 'px';
+        text.style.top = value * 1 + 'px';
     });
-</script>
+  </script>
 
 
-</body>
+   <script src="script.js"></script>
+
+  </body>
 </html>
